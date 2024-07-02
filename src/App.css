@@ -1,0 +1,94 @@
+.image-size {
+  width: 150px;
+  height: 150px;
+  border-radius: 5px;
+}
+
+.father {
+  height: 150px;
+  display: flex;
+  margin-left: 304px;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.links {
+  margin: 5px;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  box-shadow: 0 2px 2px rgba(0,0, 0,1);
+  transition: all 0.25s;
+}
+
+.links:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 12px 16px rgba(0,0, 0,1);
+}
+
+.image-container {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 2px 2px rgba(0,0, 0,0.8);
+  
+}
+
+figcaption {
+  margin: 0;
+  padding: 5px;
+}
+
+figure {
+  justify-content: center;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  background: #373B44;  
+  background: -webkit-linear-gradient(to right, #4286f4, #373B44);  
+  background: linear-gradient(to right, #4286f4, #373B44); 
+}
+
+h1#title {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  position: relative;
+  left: 280px;
+  bottom: 45px;
+}
+
+.imagen-principal{
+  position: relative;
+  right: 1px;
+  width: 149.14%;
+}
+
+body{
+transition: linear 30s;
+animation: infinite 15s cambiar;
+}
+
+@keyframes cambiar{
+  0%{ 
+    background-color: red;
+  }
+
+  20%{
+    background-color: aqua;
+  }
+  50%{
+    background-color: yellow;
+  }
+  100%{
+    background-color: green;
+  }
+}
